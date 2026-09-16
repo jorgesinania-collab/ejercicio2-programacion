@@ -1,0 +1,225 @@
+
+/* ===================================================
+   RESET BÁSICO Y REGLAS GENERALES
+   =================================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1e293b;
+    background-color: #f8fafc;
+}
+
+/* ===================================================
+   MAQUETACIÓN FLUIDA TRADICIONAL (ANCHO EN %)
+   Sin Flexbox, sin Grid, sin Media Queries
+   =================================================== */
+header, nav, main, footer {
+    width: 92%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* ===================================================
+   HEADER
+   =================================================== */
+header {
+    background-color: #881337;
+    color: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+}
+
+/* ===================================================
+   NAVEGACIÓN (DISPLAY INLINE-BLOCK)
+   =================================================== */
+nav {
+    background-color: #4c0519;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 12px;
+    font-weight: bold;
+    font-size: 0.88rem;
+}
+
+nav a:hover {
+    background-color: #9f1239;
+    border-radius: 4px;
+}
+
+/* ===================================================
+   MAIN & SECCIONES
+   =================================================== */
+main {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+h2 {
+    color: #881337;
+    font-size: 1.55rem;
+    border-bottom: 2px solid #fecdd3;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #4c0519;
+    font-size: 1.2rem;
+    margin: 15px 0 10px 0;
+}
+
+article {
+    background-color: #fff1f2;
+    border-left: 4px solid #be123c;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 0 6px 6px 0;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* ===================================================
+   TABLA COMPARATIVA
+   =================================================== */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #fecdd3;
+    padding: 12px;
+    text-align: left;
+    font-size: 0.92rem;
+}
+
+th {
+    background-color: #be123c;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #fff1f2;
+}
+
+/* ===================================================
+   TARJETAS DE FACTORES (INLINE-BLOCK)
+   =================================================== */
+.tarjetas-contenedor {
+    width: 100%;
+    text-align: center;
+}
+
+.tarjeta-estadistica {
+    display: inline-block;
+    width: 31%;
+    margin: 1%;
+    vertical-align: top;
+    background-color: #ffe4e6;
+    border-left: none;
+    border-top: 4px solid #be123c;
+    text-align: left;
+    padding: 18px 14px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.tarjeta-estadistica h3 {
+    font-size: 1.15rem;
+    color: #881337;
+    margin: 0 0 10px 0;
+}
+
+/* ===================================================
+   CLEARFIX TRADICIONAL
+   =================================================== */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ===================================================
+   GALERÍA FLUIDA TRADICIONAL
+   =================================================== */
+.galeria-contenedor {
+    width: 100%;
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    width: 47%;
+    margin: 1%;
+    vertical-align: top;
+    background-color: #ffffff;
+    border: 1px solid #fecdd3;
+    border-radius: 6px;
+    padding: 8px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+figure img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-size: 0.88rem;
+    color: #475569;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* ===================================================
+   FOOTER
+   =================================================== */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    color: #64748b;
+    font-size: 0.9rem;
+}
